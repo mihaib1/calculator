@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>Calculator</title>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="title"><h1>Calculator</h1></div>
+    <div id="container">
+        <div id='display'></div>
+        <div class="buttons">
+            <div class="numbers">
+                <div class="first-row">
+                    <button onclick='backToZero()'>AC</button>
+                    <button onclick="setOperator('+-')">+/-</button>
+                    <button onclick="setOperator('%')">%</button>
+                    <button onclick="setOperator('/')">/</button>
+                </div>
+                <div class="second-row">
+                    <button onclick="appendNumber('7')">7</button>
+                    <button onclick="appendNumber('8')">8</button>
+                    <button onclick="appendNumber('9')">9</button>
+                    <button onclick="setOperator('*')">*</button>
+                </div>
+                <div class="third-row">
+                    <button onclick="appendNumber('4')">4</button>
+                    <button onclick="appendNumber('5')">5</button>
+                    <button onclick="appendNumber('6')">6</button>
+                    <button>-</button>
+                </div>
+                <div class="fourth-row">
+                    <button onclick="appendNumber('1')">1</button>
+                    <button onclick="appendNumber('2')">2</button>
+                    <button onclick="appendNumber('3')">3</button>
+                    <button onclick="setOperator('+')">+</button>
+                </div>
+                <div class="last-row">
+                    <button onclick="if(displayedNumber[0]){appendNumber('0')}">0</button>
+                    <button onclick="appendNumber('.')">,</button>
+                    <button onclick="operate(operator, num1, num2)">=</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
