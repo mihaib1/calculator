@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
     display:flex;
     justify-content:center;
@@ -11,6 +18,10 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    background-color:grey;
+    width:fit-content;
+    padding:16px;
+    border-radius: 8px;
 }
 
 #display{
@@ -18,9 +29,12 @@
     justify-content:center;
     align-items:center;
     margin-bottom:8px;
+    background-color: white;
     border:solid;
-    border-color:black;
+    border-color:orange;
     padding: 16px 64px;
+    width:100px;
+    height:30px;
 }
 
 .buttons {
@@ -28,7 +42,6 @@
     flex-direction:column;
     justify-content:center;
     align-content:center;
-    
 }
 
 .numbers {
@@ -46,12 +59,21 @@
 }
 
 button {
-    width:30px;
+    width:45px;
     height:30px;
+    background-color: darkgrey;
+    color:white;
+    border-radius:8px;
+    border:solid;
+    border-color:orange;
 }
 
-.zero {
-    width:65px;
+.zeroBtn {
+    width:95px;
+}
+
+.operator {
+    background-color: orange;
 }
 
 .numbers {
